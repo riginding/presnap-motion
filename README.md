@@ -18,6 +18,18 @@ pip install -r requirements.txt
 python scripts/find_snap.py --video /path/to/clip.mp4 --out_dir ./out --plot
 ```
 
+## Batch mode via environment variables
+
+```bash
+export PRESNAP_VIDEO_DIR='C:\Users\your_user\programming\nfl clips'
+export PRESNAP_WINDOWS_RESULTS_DIR='C:\Users\your_user\programming\results'
+export PRESNAP_WSL_VIDEO_CACHE_DIR='./wsl_video_cache'
+export PRESNAP_OUT_DIR='./snap_output'
+python scripts/find_snap.py --plot
+```
+
+CLI flags still override env vars.
+
 ## Quick Start (Google Colab)
 
 1. Open `scripts/colab_notebook_cells.md`
